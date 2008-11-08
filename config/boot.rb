@@ -17,11 +17,11 @@ module Rails
     end
 
     def pick_boot
-      (vendor_rails? ? VendorBoot : GemBoot).new
+      VendorBoot.new
     end
 
     def vendor_rails?
-      File.exist?("#{RAILS_ROOT}/vendor/rails")
+      true
     end
 
     def preinitialize
