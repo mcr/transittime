@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  direction1_name: "west"
+  direction2_name: "west"
+
+bus151:
+  direction1_name: "151W"	
+  direction2_name: "151E"

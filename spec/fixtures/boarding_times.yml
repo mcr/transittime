@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  stopcode: MyString
+  vehiclecode: MyString
+  boardtime: 2008-11-07 21:26:25
+  routenumber: MyString
+
+two:
+  stopcode: MyString
+  vehiclecode: MyString
+  boardtime: 2008-11-07 21:26:25
+  routenumber: MyString

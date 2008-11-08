@@ -1,10 +1,10 @@
 class CreateBoardingTimes < ActiveRecord::Migration
   def self.up
     create_table :boarding_times do |t|
-      t.string :stopcode
-      t.string :vehiclecode
+      t.integer  :transit_stop_id
+      t.string   :vehiclecode
       t.datetime :boardtime
-      t.string :routenumber
+      t.integer  :transit_route_id
 
       t.timestamps
     end

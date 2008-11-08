@@ -9,13 +9,29 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20081108022625) do
+ActiveRecord::Schema.define(:version => 20081108054221) do
 
   create_table "boarding_times", :force => true do |t|
-    t.string   "stopcode"
+    t.integer  "transit_stop_id"
     t.string   "vehiclecode"
     t.datetime "boardtime"
-    t.string   "routenumber"
+    t.integer  "transit_route_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "transit_routes", :force => true do |t|
+    t.string   "direction1_name"
+    t.string   "direction2_name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "transit_stops", :force => true do |t|
+    t.string   "stopcode"
+    t.string   "latlong"
+    t.string   "crossstreet1"
+    t.string   "crossstreet2"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
