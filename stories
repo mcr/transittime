@@ -1,0 +1,34 @@
+--- 
+november: 
+  :list: 
+  - !ruby/object:Story 
+    completed: false
+    description: install appropriate gtk and hildon components on laptop and on N800.
+    estimate: 1.0
+    title: install devel environment
+  - !ruby/object:Story 
+    completed: false
+    description: figure out how to startup up hildon/gtk with a single window that has a single "OK" button.
+    estimate: 3.0
+    title: build first application
+  - !ruby/object:Story 
+    completed: false
+    description: create the first test case with rspec and run the first unit test case.
+    estimate: 1.0
+    title: get rspec working
+  - !ruby/object:Story 
+    completed: false
+    description: |
+      do just enough packaging to let the code be installed on N800 without having git.
+
+    estimate: 4.0
+    title: ship 1.0
+  :selected: 3
+iterations: 
+  :list: 
+  - !ruby/object:Iteration 
+    end: "2008-12-01"
+    name: november
+    start: "2008-11-01"
+    velocity: 0.0
+  :selected: 0
