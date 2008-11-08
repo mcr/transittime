@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="990"
+   height="765"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+   version="1.0"
+   sodipodi:docbase="/corp/projects/Misc/tt/TransitTime/doc"
+   sodipodi:docname="mainscreen.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="376.475"
+     inkscape:cy="520"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer4"
+     width="990px"
+     height="765px"
+     inkscape:window-width="1249"
+     inkscape:window-height="939"
+     inkscape:window-x="48"
+     inkscape:window-y="89" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="nokia"
+     sodipodi:insensitive="true"
+     style="display:inline">
+    <image
+       style="opacity:1"
+       y="27.500006"
+       x="55.714291"
+       id="image1932"
+       height="455"
+       width="650"
+       sodipodi:absref="/corp/projects/Misc/tt/TransitTime/doc/05_n800_lowres.jpg"
+       xlink:href="05_n800_lowres.jpg" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="appwindow"
+     style="opacity:1;display:inline"
+     sodipodi:insensitive="true">
+    <text
+       xml:space="preserve"
+       style="font-size:9.30342102px;font-style:normal;font-weight:normal;text-align:end;text-anchor:end;fill:yellow;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Andale Mono"
+       x="564.35791"
+       y="190.69711"
+       id="text1937"><tspan
+         sodipodi:role="line"
+         id="tspan1939"
+         x="564.35791"
+         y="190.69711">Transit Time</tspan></text>
+    <g
+       id="g2115">
+      <rect
+         ry="0.04000001"
+         rx="0.039999969"
+         y="200.15256"
+         x="427.85706"
+         height="165.56189"
+         width="138.57152"
+         id="rect1872"
+         style="opacity:1;color:black;fill:#ac9393;fill-opacity:1;fill-rule:nonzero;stroke:#94c937;stroke-width:0.99999958;stroke-linecap:round;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:0.99999963, 5.99999773;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible" />
+      <image
+         xlink:href="OTrain_marksmall.png"
+         sodipodi:absref="/corp/projects/Misc/tt/TransitTime/doc/OTrain_marksmall.png"
+         width="126.85714"
+         height="88.428574"
+         id="image2054"
+         x="431"
+         y="267.35715" />
+      <image
+         xlink:href="bus1.png"
+         sodipodi:absref="/corp/projects/Misc/tt/TransitTime/doc/bus1.png"
+         width="100"
+         height="42"
+         id="image2112"
+         x="459.28571"
+         y="207.28571" />
+    </g>
+  </g>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="buttons"
+     style="display:inline">
+    <g
+       id="g2191">
+      <rect
+         ry="0.040000007"
+         rx="0.039999958"
+         y="204.28574"
+         x="433.57129"
+         height="60.714283"
+         width="60.714268"
+         id="rect2153"
+         style="opacity:1;color:black;fill:#f95;fill-opacity:1;fill-rule:nonzero;stroke:#94c937;stroke-width:0.99999964;stroke-linecap:round;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:0.99999968, 5.9999981;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible" />
+      <text
+         id="text2155"
+         y="216.42857"
+         x="437.14288"
+         style="font-size:20px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Andale Mono"
+         xml:space="preserve"><tspan
+           style="font-size:10px;text-align:start;text-anchor:start"
+           y="216.42857"
+           x="437.14288"
+           id="tspan2157"
+           sodipodi:role="line">Leaving</tspan><tspan
+           id="tspan2161"
+           style="font-size:10px;text-align:start;text-anchor:start"
+           y="228.92857"
+           x="437.14288"
+           sodipodi:role="line">from:</tspan><tspan
+           id="tspan2159"
+           y="251.50887"
+           x="437.14288"
+           sodipodi:role="line">HOME</tspan></text>
+    </g>
+    <g
+       id="g2227">
+      <rect
+         ry="0.04000001"
+         rx="0.039999969"
+         y="326.42859"
+         x="435.71429"
+         height="32.857143"
+         width="58.57143"
+         id="rect2163"
+         style="text-align:center;text-anchor:middle;opacity:1;color:black;fill:#deaa87;fill-opacity:1;fill-rule:nonzero;stroke:#94c937;stroke-width:0.99999988;stroke-linecap:round;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:0.99999988, 5.99999928;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible" />
+      <text
+         id="text2165"
+         y="339.57144"
+         x="465.57144"
+         style="font-size:20px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Andale Mono"
+         xml:space="preserve"><tspan
+           style="font-size:14px"
+           y="339.57144"
+           x="465.57144"
+           id="tspan2167"
+           sodipodi:role="line">MORE</tspan><tspan
+           style="font-size:14px"
+           id="tspan2169"
+           y="357.07144"
+           x="465.57144"
+           sodipodi:role="line">OPTIONS</tspan></text>
+    </g>
+    <rect
+       style="opacity:1;color:black;fill:#deaa87;fill-opacity:1;fill-rule:nonzero;stroke:#94c937;stroke-width:0.99999988;stroke-linecap:round;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:0.99999988, 5.99999928;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible"
+       id="rect2233"
+       width="52.857143"
+       height="15.714286"
+       x="435.71429"
+       y="180"
+       rx="0.039999969"
+       ry="0.04000001" />
+    <text
+       xml:space="preserve"
+       style="font-size:14px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Andale Mono"
+       x="462.57144"
+       y="191.28571"
+       id="text2235"><tspan
+         sodipodi:role="line"
+         id="tspan2237"
+         x="462.57144"
+         y="191.28571">08:13</tspan></text>
+    <g
+       id="g2249"
+       transform="translate(0,12)">
+      <g
+         id="g2140">
+        <rect
+           style="opacity:1;color:black;fill:#ff8080;fill-opacity:1;fill-rule:nonzero;stroke:#94c937;stroke-width:0.99999988;stroke-linecap:round;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:0.99999988, 5.99999928;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible"
+           id="rect2122"
+           width="58.57143"
+           height="32.857143"
+           x="499.28571"
+           y="228.57143"
+           rx="0.039999969"
+           ry="0.04000001" />
+        <text
+           xml:space="preserve"
+           style="font-size:20px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Andale Mono"
+           x="527.85712"
+           y="248.57143"
+           id="text2128"><tspan
+             sodipodi:role="line"
+             id="tspan2130"
+             x="527.85712"
+             y="248.57143">151S</tspan></text>
+      </g>
+      <text
+         id="text2241"
+         y="260.39417"
+         x="542.46411"
+         style="font-size:10px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Andale Mono"
+         xml:space="preserve"><tspan
+           y="260.39417"
+           x="542.46411"
+           id="tspan2243"
+           sodipodi:role="line">08:20</tspan></text>
+    </g>
+    <g
+       id="g2295">
+      <g
+         transform="translate(-64,-46)"
+         id="g2172">
+        <rect
+           style="opacity:1;color:black;fill:#ff8080;fill-opacity:1;fill-rule:nonzero;stroke:#94c937;stroke-width:0.99999988;stroke-linecap:round;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:0.99999988, 5.99999928;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible"
+           id="rect2126"
+           width="58.57143"
+           height="32.857143"
+           x="499.28571"
+           y="324.28571"
+           rx="0.039999969"
+           ry="0.04000001" />
+        <text
+           xml:space="preserve"
+           style="font-size:20px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Andale Mono"
+           x="528.96344"
+           y="346.79688"
+           id="text2136"><tspan
+             sodipodi:role="line"
+             id="tspan2138"
+             x="528.96344"
+             y="346.79688">16E</tspan></text>
+      </g>
+      <text
+         id="text2245"
+         y="310.44482"
+         x="477.58118"
+         style="font-size:10px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Andale Mono"
+         xml:space="preserve"><tspan
+           y="310.44482"
+           x="477.58118"
+           id="tspan2247"
+           sodipodi:role="line">08:20</tspan></text>
+    </g>
+    <g
+       style="display:inline"
+       id="g2257"
+       transform="translate(0.142866,-25.14286)"
+       inkscape:transform-center-x="-4.2857143"
+       inkscape:transform-center-y="-5">
+      <g
+         id="g2259">
+        <rect
+           style="opacity:1;color:black;fill:#ff8080;fill-opacity:1;fill-rule:nonzero;stroke:#94c937;stroke-width:0.99999988;stroke-linecap:round;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:0.99999988, 5.99999928;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible"
+           id="rect2261"
+           width="58.57143"
+           height="32.857143"
+           x="499.28571"
+           y="228.57143"
+           rx="0.039999969"
+           ry="0.04000001" />
+        <text
+           xml:space="preserve"
+           style="font-size:20px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Andale Mono"
+           x="527.85712"
+           y="248.57143"
+           id="text2263"><tspan
+             sodipodi:role="line"
+             id="tspan2265"
+             x="527.85712"
+             y="248.57143">16W</tspan></text>
+      </g>
+      <text
+         id="text2267"
+         y="260.39417"
+         x="542.46411"
+         style="font-size:10px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Andale Mono"
+         xml:space="preserve"><tspan
+           y="260.39417"
+           x="542.46411"
+           id="tspan2269"
+           sodipodi:role="line">08:05</tspan></text>
+    </g>
+    <g
+       id="g2287">
+      <g
+         transform="translate(0.28572,49.85714)"
+         id="g2145">
+        <rect
+           style="opacity:1;color:black;fill:#ff8080;fill-opacity:1;fill-rule:nonzero;stroke:#94c937;stroke-width:0.99999988;stroke-linecap:round;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:0.99999988, 5.99999928;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible"
+           id="rect2147"
+           width="58.57143"
+           height="32.857143"
+           x="499.28571"
+           y="228.57143"
+           rx="0.039999969"
+           ry="0.04000001" />
+        <text
+           xml:space="preserve"
+           style="font-size:20px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Andale Mono"
+           x="527.85712"
+           y="248.57143"
+           id="text2149"><tspan
+             sodipodi:role="line"
+             id="tspan2151"
+             x="527.85712"
+             y="248.57143">151N</tspan></text>
+      </g>
+      <text
+         id="text2271"
+         y="310.23053"
+         x="540.50977"
+         style="font-size:10px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Andale Mono"
+         xml:space="preserve"><tspan
+           y="310.23053"
+           x="540.50977"
+           id="tspan2273"
+           sodipodi:role="line">08:50</tspan></text>
+    </g>
+    <g
+       id="g2279">
+      <g
+         transform="translate(0,50)"
+         id="g2177">
+        <rect
+           style="opacity:1;color:black;fill:#ff8080;fill-opacity:1;fill-rule:nonzero;stroke:#94c937;stroke-width:0.99999988;stroke-linecap:round;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:0.99999988, 5.99999928;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible"
+           id="rect2124"
+           width="58.57143"
+           height="32.857143"
+           x="499.28571"
+           y="277.42856"
+           rx="0.039999969"
+           ry="0.04000001" />
+        <text
+           xml:space="preserve"
+           style="font-size:20px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Andale Mono"
+           x="530.10632"
+           y="298.79688"
+           id="text2132"><tspan
+             sodipodi:role="line"
+             id="tspan2134"
+             x="530.10632"
+             y="298.79688">2E</tspan></text>
+      </g>
+      <text
+         id="text2275"
+         y="357.73053"
+         x="541.08118"
+         style="font-size:10px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;font-family:Andale Mono"
+         xml:space="preserve"><tspan
+           y="357.73053"
+           x="541.08118"
+           id="tspan2277"
+           sodipodi:role="line">08:22</tspan></text>
+    </g>
+  </g>
+</svg>
