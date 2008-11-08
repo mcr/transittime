@@ -2,7 +2,14 @@
 november: 
   :list: 
   - !ruby/object:Story 
-    completed: false
+    completed: true
+    description: |
+      set it up on github, and put initial rails-inspired structure.
+
+    estimate: 0.5
+    title: create initial git repository
+  - !ruby/object:Story 
+    completed: true
     description: install appropriate gtk and hildon components on laptop and on N800.
     estimate: 1.0
     title: install devel environment
@@ -23,12 +30,12 @@ november:
 
     estimate: 4.0
     title: ship 1.0
-  :selected: 3
+  :selected: 1
 iterations: 
   :list: 
   - !ruby/object:Iteration 
     end: "2008-12-01"
     name: november
     start: "2008-11-01"
-    velocity: 0.0
+    velocity: 0.1875
   :selected: 0
