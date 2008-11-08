@@ -1,0 +1,142 @@
+#! /usr/bin/env ruby
+
+# This file is part of TransitTime
+#
+# TransitTime is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# TransitTime is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with Nibbles.  If not, see <http://www.gnu.org/licenses/>.
+
+$KCODE="UTF-8"
+USER_ROOT = ENV["HOME"]+"/.transittime"
+TT_ROOT = File.expand_path("#{File.dirname(__FILE__)}")
+TT_LIB = "#{TT_ROOT}/lib"
+TT_ICONS = "#{TT_ROOT}/icons"
+
+#if not File.exists?(USER_ROOT) or not File.exists?(USER_ROOT+'/tt.sqlite3')
+#  puts "Creating .tt directory and DB..."
+#  system "mkdir #{USER_ROOT} "
+#end
+
+#if not File.exists?(USER_ROOT+'/configuration')
+#  puts "Creating configuration file..."
+#  system "cp #{TT_ROOT}/configuration.example #{USER_ROOT}/configuration"
+#end
+
+#require "#{TT_LIB}/configuration"
+#Configuration.load("#{USER_ROOT}/configuration")
+
+#Dir.chdir USER_ROOT
+
+class Device
+  begin
+    require 'hildon'
+    @@platform = :hildon
+  rescue Exception => e
+    require 'gtk2'
+    @@platform = :gtk2
+  end
+
+  def self.platform
+    @@platform
+  end
+
+  def self.hildon?
+    @@platform == :hildon
+  end
+end
+
+require "#{TT_LIB}/window"
+
+begin
+  if Device.hildon?
+    program = Hildon::Program.get_instance
+    @window = program.add_window Hildon::Window.new
+  else
+    @window = Gtk::Window.new
+  end
+  @window.setup_menu
+
+  require 'rubygems'
+  require 'net/http'
+  require 'time'
+  require 'rubygems' unless Device.hildon?
+  require 'libosso' if Device.hildon?
+  require 'sqlite3'
+  #require "#{TT_LIB}/settings_dialog"
+  #require "#{TT_LIB}/feed_list_frame"
+  #require "#{TT_LIB}/article_list_frame"
+  #require "#{TT_LIB}/article_frame"
+  #require "#{TT_LIB}/article"
+  #require "#{TT_LIB}/feed"
+
+
+  horizontal_panel = Gtk::HPaned.new
+  #article_frame = ArticleFrame.new
+  #feed_list_frame = FeedListFrame.new(article_frame)
+  #article_list_frame = ArticleListFrame.new(feed_list_frame, article_frame)
+  #feed_list_frame.article_list = article_list_frame
+  #vertical_panel = Gtk::VPaned.new
+
+  #article_frame.update welcome_message
+
+  #horizontal_panel.pack1(feed_list_frame, true, true)
+  #horizontal_panel.pack2(vertical_panel, true, true)
+  #feed_list_frame.set_size_request(225, -1)
+
+  #vertical_panel.pack1(article_list_frame, true, true)
+  #vertical_panel.pack2(article_frame, true, true)
+  #article_list_frame.set_size_request(-1, 100)
+  #article_frame.set_size_request(495, 200)
+  horizontal_panel.position = 150
+  @window.append(horizontal_panel)
+  @window.set_default_size(720, 400).show_all
+  #article_list_frame.visible = false
+
+  GLib.application_name = "Transit Time"
+
+  Thread.new do
+    @window.signal_connect("delete_event") { @window.exit_application }
+    @window.signal_connect("key-press-event") do |window, event|
+      case event.keyval
+      when Gdk::Keyval::GDK_F6, Gdk::Keyval::GDK_F11
+        @window.toggle_fullscreen
+      when Gdk::Keyval::GDK_F7
+        @window.toggle_article_list.active = !article_list_frame.visible?
+      when Gdk::Keyval::GDK_F8
+        feed_list_frame.toggle_visibility
+      end
+    end
+
+    if Device.hildon?
+      require "#{TT_LIB}/osso"
+    end
+
+     #populate and setup
+     Thread.new do
+      feed_list_frame.initial_setup
+    end
+
+    #require "#{TT_LIB}/feed_fetcher"
+    #@window.fetcher = FeedFetcher.new(feed_list_frame, article_list_frame, article_frame)
+    #feed_list_frame.fetcher = FeedFetcher.new(feed_list_frame, article_list_frame, article_frame)
+  end
+  Gtk.main 
+rescue Exception => exception
+  File.open "/tmp/tt.error_log", "a+" do |log|
+    log.write Time.now.to_s + "\n"
+    log.write exception.message + "\n"
+    log.write exception.backtrace.join("\n") + "\n\n"
+  end
+  puts exception.class
+  puts exception.message
+  puts exception.backtrace.join("\n") + "\n\n"
+end
