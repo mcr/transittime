@@ -223,7 +223,9 @@ module Rails
     # list. By default, all frameworks (Active Record, Active Support,
     # Action Pack, Action Mailer, and Active Resource) are loaded.
     def require_frameworks
-      configuration.frameworks.each { |framework| require(framework.to_s) }
+      configuration.frameworks.each { |framework|
+	#puts "Loading #{framework.to_s}\n"
+	require(framework.to_s) }
     rescue LoadError => e
       # re-raise because Mongrel would swallow it
       raise e.to_s
