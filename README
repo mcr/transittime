@@ -1,0 +1,17 @@
+TransitTime is a RUBY-Maemo (GTK) application that helps you keep
+track of which transit routes are better than others.
+
+It will run on a portable device (such as a Nokia N800/N810), and
+collect information on when your favorite bus/trains/go-carts arrive
+(compared to when they are scheduled).  
+
+It will collect your favorite routes and let you share that information
+with others through a TBD set of social networking sites.  This is a form
+of CrowdComputing applied to the problem of:
+	"how do I get from A to B?"
+
+Integration with Google Maps is anticipated, but we don't know how yet.
+
+Maybe you have a better name.  I hear MC Hammer singing in the background.
+"You *can* touch this", as he points to his tablet...
+
