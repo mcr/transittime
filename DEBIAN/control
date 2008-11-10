@@ -1,0 +1,8 @@
+Package: transittime
+Version: 1.0
+Section: main
+Priority: optional
+Architecture: all
+Provides: transittime
+Maintainer: <ptadmin@simtone.net>
+Description: TransitTime is an application for N800 to record when transit vehicles arrive/depart.

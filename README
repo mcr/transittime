@@ -15,3 +15,6 @@ Integration with Google Maps is anticipated, but we don't know how yet.
 Maybe you have a better name.  I hear MC Hammer singing in the background.
 "You *can* touch this", as he points to his tablet...
 
+To package the ruby code, run "rake debian:package"
+You can run it on the nokia by running "cd tt; ruby transittime"
+
