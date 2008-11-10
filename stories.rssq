@@ -14,28 +14,47 @@ november:
     estimate: 1.0
     title: install devel environment
   - !ruby/object:Story 
-    completed: false
+    completed: true
     description: figure out how to startup up hildon/gtk with a single window that has a single "OK" button.
     estimate: 3.0
     title: build first application
   - !ruby/object:Story 
-    completed: false
+    completed: true
     description: create the first test case with rspec and run the first unit test case.
     estimate: 1.0
     title: get rspec working
   - !ruby/object:Story 
-    completed: false
+    completed: true
     description: |
       do just enough packaging to let the code be installed on N800 without having git.
 
     estimate: 4.0
     title: ship 1.0
-  :selected: 1
+  - !ruby/object:Story 
+    completed: false
+    description: build enough connection between the 5 buttons on the screen and the database.
+    estimate: 3.0
+    title: record boarding time
+  - !ruby/object:Story 
+    completed: false
+    description: |
+      build TransitTimeServer with skeletal rails system.
+
+    estimate: 6.0
+    title: skeletal web server
+  - !ruby/object:Story 
+    completed: false
+    description: |
+      use activeresource to upload boarding times to HTTP server.
+
+    estimate: 4.0
+    title: upload to web server
+  :selected: 4
 iterations: 
   :list: 
   - !ruby/object:Iteration 
     end: "2008-12-01"
     name: november
     start: "2008-11-01"
-    velocity: 0.1875
+    velocity: 1.05555555555556
   :selected: 0
