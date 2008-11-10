@@ -63,7 +63,6 @@ begin
   else
     @window = Gtk::Window.new
   end
-  @window.setup_menu
 
   require 'rubygems'
   require 'net/http'
@@ -79,26 +78,38 @@ begin
   #require "#{TT_LIB}/feed"
 
 
-  horizontal_panel = Gtk::HPaned.new
-  #article_frame = ArticleFrame.new
-  #feed_list_frame = FeedListFrame.new(article_frame)
-  #article_list_frame = ArticleListFrame.new(feed_list_frame, article_frame)
-  #feed_list_frame.article_list = article_list_frame
-  #vertical_panel = Gtk::VPaned.new
+  # see http://ruby-gnome2.sourceforge.jp/hiki.cgi?Gtk%3A%3ATable
+  panel = Gtk::Table.new(5, 2)
 
-  #article_frame.update welcome_message
+  title         = Gtk::Label.new
+  title.set_markup("<small>Transit Time</small>")
 
-  #horizontal_panel.pack1(feed_list_frame, true, true)
-  #horizontal_panel.pack2(vertical_panel, true, true)
-  #feed_list_frame.set_size_request(225, -1)
+  # font_desc=\"Andale Mono\"
+  clock         = Gtk::Label.new
+  clock.set_markup("<span size=\"14\" >08:13</span>")
 
-  #vertical_panel.pack1(article_list_frame, true, true)
-  #vertical_panel.pack2(article_frame, true, true)
-  #article_list_frame.set_size_request(-1, 100)
-  #article_frame.set_size_request(495, 200)
-  horizontal_panel.position = 150
-  @window.append(horizontal_panel)
-  @window.set_default_size(720, 400).show_all
+  origin_button = Gtk::Button.new
+  origin_button.label="Leaving\nfrom:\nHome"
+    #("<small>Leaving\nfrom:\n</small>Home")
+  more_options  = Gtk::Button.new("More\nOptions")
+  button1 = Gtk::Button.new("16W")
+  button2 = Gtk::Button.new("151S")
+  button3 = Gtk::Button.new("16E")
+  button4 = Gtk::Button.new("151N")
+  button5 = Gtk::Button.new("2E")
+
+  panel.attach(title,         0, 1, 0, 1, Gtk::EXPAND, Gtk::EXPAND, 0, 0)
+  panel.attach(clock,         1, 2, 0, 1, Gtk::EXPAND, Gtk::EXPAND, 0, 0)
+  panel.attach(origin_button, 0, 1, 1, 3, Gtk::EXPAND, Gtk::EXPAND, 0, 0)
+  panel.attach(button1,       1, 2, 1, 2, Gtk::EXPAND, Gtk::EXPAND, 0, 0)
+  panel.attach(button2,       1, 2, 2, 3, Gtk::EXPAND, Gtk::EXPAND, 0, 0)
+  panel.attach(button3,       0, 1, 3, 4, Gtk::EXPAND, Gtk::EXPAND, 0, 0)
+  panel.attach(button4,       1, 2, 3, 4, Gtk::EXPAND, Gtk::EXPAND, 0, 0)
+  panel.attach(more_options,  0, 1, 4, 5, Gtk::EXPAND, Gtk::EXPAND, 0, 0)
+  panel.attach(button5,       1, 2, 4, 5, Gtk::EXPAND, Gtk::EXPAND, 0, 0)
+  
+  @window.append(panel)
+  @window.set_default_size(200, 400).show_all
   #article_list_frame.visible = false
 
   GLib.application_name = "Transit Time"
