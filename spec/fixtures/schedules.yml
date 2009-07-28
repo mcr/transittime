@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  transit_id: 1
+  stop_id: 1
+
+two:
+  transit_id: 1
+  stop_id: 1

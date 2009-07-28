@@ -1,0 +1,2 @@
+class Walk < Transit
+end

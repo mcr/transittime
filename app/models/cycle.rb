@@ -1,0 +1,2 @@
+class Cycle < Transit
+end

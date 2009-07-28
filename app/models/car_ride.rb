@@ -1,0 +1,2 @@
+class CarRide < Transit
+end

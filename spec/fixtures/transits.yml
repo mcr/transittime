@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  starting_place_id: 1
+  ending_place_id: 1
+  type: MyString
+  route_num: MyString
+  booking_id: 1
+
+two:
+  name: MyString
+  starting_place_id: 1
+  ending_place_id: 1
+  type: MyString
+  route_num: MyString
+  booking_id: 1

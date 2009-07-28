@@ -1,0 +1,2 @@
+class BusRoute < Transit
+end
