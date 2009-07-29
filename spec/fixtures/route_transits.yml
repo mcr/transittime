@@ -1,9 +1,14 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
+walk1:
   route_id: 1
-  transit_id: 1
+  transit: walktokirkwood
+  
+bus2:
+  route_id: 1
+  transit: bus16downtown
 
-two:
+walk2:
   route_id: 1
-  transit_id: 1
+  transit: walktopub
+

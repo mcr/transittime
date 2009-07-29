@@ -1,9 +1,8 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  transit_id: 1
+number16fouroclock:
+  transit: bus16downtown
+  departure_time: 160700
+  validdays: "12345"
   stop_id: 1
 
-two:
-  transit_id: 1
-  stop_id: 1

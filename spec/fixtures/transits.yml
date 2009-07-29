@@ -1,17 +1,36 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  name: MyString
+walktokirkwood:
+  name: "Walk to Kirkwood Stop"
   starting_place_id: 1
-  ending_place_id: 1
-  type: MyString
-  route_num: MyString
+  ending_place_id: 2
+  type: walk
+
+walktotransitway:
+  name: "Walk to Westboro Station"
+  starting_place_id: 1
+  ending_place_id: 3
+  type: walk
+
+bus16downtown:
+  name: "Go to Downtown"
+  starting_place_id: 3
+  ending_place_id: 4
+  type: transit
+  route_num: 16
   booking_id: 1
 
-two:
-  name: MyString
+walktopub:
+  name: "Walk to pub"
+  starting_place_id: 4
+  ending_place_id: 5
+  type: walk
+
+biketotransitway:
+  name: "Cycle to transit"
   starting_place_id: 1
-  ending_place_id: 1
-  type: MyString
-  route_num: MyString
-  booking_id: 1
+  ending_place_id: 3
+  type: cycle
+
+
+

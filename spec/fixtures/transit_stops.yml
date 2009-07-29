@@ -1,11 +1,5 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+number16kirkwood:
+  name: "Number 16/151 Stop - Downtown"
+  place_id: 2
+  sign_no: 4899
 
-one:
-  name: MyString
-  place_id: 1
-  sign_no: MyString
-
-two:
-  name: MyString
-  place_id: 1
-  sign_no: MyString

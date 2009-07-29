@@ -1,11 +1,7 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  name: MyString
+traveltopub:
+  name: "Friday Trip to Pub"
   starting_place_id: 1
-  ending_place_id: 1
+  ending_place_id: 5
 
-two:
-  name: MyString
-  starting_place_id: 1
-  ending_place_id: 1

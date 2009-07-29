@@ -1,13 +1,38 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  name: MyString
-  latitude: MyString
-  longitude: MyString
-  googlemapurl: MyString
+home:
+  id: 1
+  name: "Michael's House"
+  latitude: 45.392191
+  longitude: -75.7456
+  googlemapurl: http://maps.google.ca/?ie=UTF8&ll=45.392191,-75.7456&spn=0.002121,0.004045&t=h&z=18
 
-two:
-  name: MyString
-  latitude: MyString
-  longitude: MyString
-  googlemapurl: MyString
+number16downtown:
+  id: 2
+  name: "Number 16/151 Stop - Downtown"
+  latitude: 45.392898
+  longitude: -75.745663
+  googlemapurl: http://maps.google.ca/?ie=UTF8&ll=45.392898,-75.745663&spn=0.002121,0.004045&t=h&z=18
+
+westborotarnsitdowntown:
+  id: 3
+  name: "Westboro Transitway: Downtown"
+  latitude: 45.397154
+  longitude: -75.751564
+  googlemapurl: http://maps.google.ca/?ie=UTF8&&ll=45.397154,-75.751564&spn=0.002121,0.004045&t=h&z=18
+
+downtownqueenstreet:
+  id: 4
+  name: "Queen & Metcalfe"
+  latitude: 
+  longitude: 
+  googlemapurl: 
+
+parliamentpub:
+  id: 5
+  name: "Parliament Pub"
+  lattitude: 45.422
+  longitude: -75.69934
+  googlemapurl: http://maps.google.ca/maps?&&ll=45.422,-75.69934
+
+
