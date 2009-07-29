@@ -31,7 +31,7 @@ downtownqueenstreet:
 parliamentpub:
   id: 5
   name: "Parliament Pub"
-  lattitude: 45.422
+  latitude: 45.422
   longitude: -75.69934
   googlemapurl: http://maps.google.ca/maps?&&ll=45.422,-75.69934
 
