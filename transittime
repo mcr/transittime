@@ -21,6 +21,10 @@ TT_ROOT = File.expand_path("#{File.dirname(__FILE__)}")
 TT_LIB = "#{TT_ROOT}/lib"
 TT_ICONS = "#{TT_ROOT}/icons"
 
+require "rubygems"
+require "ruby-debug"
+
+
 #if not File.exists?(USER_ROOT) or not File.exists?(USER_ROOT+'/tt.sqlite3')
 #  puts "Creating .tt directory and DB..."
 #  system "mkdir #{USER_ROOT} "
@@ -56,97 +60,28 @@ end
 
 require "#{TT_LIB}/window"
 
+# set things up
+ENV['RAILS_ENV'] ||= 'development' unless Device.hildon?
+ENV['RAILS_ENV'] ||= 'production'  if Device.hildon?
+
+
+require "config/boot"
+require "config/environment"
+
 begin
-  if Device.hildon?
-    program = Hildon::Program.get_instance
-    @window = program.add_window Hildon::Window.new
-  else
-    @window = Gtk::Window.new
-  end
+  require 'app/controller/place_dialogue'
 
-  require 'rubygems'
-  require 'net/http'
-  require 'time'
-  require 'rubygems' unless Device.hildon?
-  require 'libosso' if Device.hildon?
-  require 'sqlite3'
-  #require "#{TT_LIB}/settings_dialog"
-  #require "#{TT_LIB}/feed_list_frame"
-  #require "#{TT_LIB}/article_list_frame"
-  #require "#{TT_LIB}/article_frame"
-  #require "#{TT_LIB}/article"
-  #require "#{TT_LIB}/feed"
+  pd = PlaceDialogue.new
 
-
-  # see http://ruby-gnome2.sourceforge.jp/hiki.cgi?Gtk%3A%3ATable
-  panel = Gtk::Table.new(5, 2)
-
-  title         = Gtk::Label.new
-  title.set_markup("<small>Transit Time</small>")
-
-  # font_desc=\"Andale Mono\"
-  clock         = Gtk::Label.new
-  clock.set_markup("<span size=\"14\" >08:13</span>")
-
-  origin_button = Gtk::Button.new
-  origin_button.label="Leaving\nfrom:\nHome"
-    #("<small>Leaving\nfrom:\n</small>Home")
-  more_options  = Gtk::Button.new("More\nOptions")
-  button1 = Gtk::Button.new("16W")
-  button2 = Gtk::Button.new("151S")
-  button3 = Gtk::Button.new("16E")
-  button4 = Gtk::Button.new("151N")
-  button5 = Gtk::Button.new("2E")
-
-  panel.attach(title,         0, 1, 0, 1, Gtk::EXPAND, Gtk::EXPAND, 0, 0)
-  panel.attach(clock,         1, 2, 0, 1, Gtk::EXPAND, Gtk::EXPAND, 0, 0)
-  panel.attach(origin_button, 0, 1, 1, 3, Gtk::EXPAND, Gtk::EXPAND, 0, 0)
-  panel.attach(button1,       1, 2, 1, 2, Gtk::EXPAND, Gtk::EXPAND, 0, 0)
-  panel.attach(button2,       1, 2, 2, 3, Gtk::EXPAND, Gtk::EXPAND, 0, 0)
-  panel.attach(button3,       0, 1, 3, 4, Gtk::EXPAND, Gtk::EXPAND, 0, 0)
-  panel.attach(button4,       1, 2, 3, 4, Gtk::EXPAND, Gtk::EXPAND, 0, 0)
-  panel.attach(more_options,  0, 1, 4, 5, Gtk::EXPAND, Gtk::EXPAND, 0, 0)
-  panel.attach(button5,       1, 2, 4, 5, Gtk::EXPAND, Gtk::EXPAND, 0, 0)
-  
-  @window.append(panel)
-  @window.set_default_size(200, 400).show_all
-  #article_list_frame.visible = false
-
-  GLib.application_name = "Transit Time"
-
-  Thread.new do
-    @window.signal_connect("delete_event") { @window.exit_application }
-    @window.signal_connect("key-press-event") do |window, event|
-      case event.keyval
-      when Gdk::Keyval::GDK_F6, Gdk::Keyval::GDK_F11
-        @window.toggle_fullscreen
-      when Gdk::Keyval::GDK_F7
-        @window.toggle_article_list.active = !article_list_frame.visible?
-      when Gdk::Keyval::GDK_F8
-        feed_list_frame.toggle_visibility
-      end
-    end
-
-    if Device.hildon?
-      require "#{TT_LIB}/osso"
-    end
-
-     #populate and setup
-     Thread.new do
-      feed_list_frame.initial_setup
-    end
-
-    #require "#{TT_LIB}/feed_fetcher"
-    #@window.fetcher = FeedFetcher.new(feed_list_frame, article_list_frame, article_frame)
-    #feed_list_frame.fetcher = FeedFetcher.new(feed_list_frame, article_list_frame, article_frame)
-  end
   Gtk.main 
+
 rescue Exception => exception
   File.open "/tmp/tt.error_log", "a+" do |log|
     log.write Time.now.to_s + "\n"
     log.write exception.message + "\n"
     log.write exception.backtrace.join("\n") + "\n\n"
   end
+
   puts exception.class
   puts exception.message
   puts exception.backtrace.join("\n") + "\n\n"
