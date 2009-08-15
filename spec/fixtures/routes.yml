@@ -4,4 +4,5 @@ traveltopub:
   name: "Friday Trip to Pub"
   starting_place_id: 1
   ending_place_id: 5
+  max_transit_cnt: 9
 
