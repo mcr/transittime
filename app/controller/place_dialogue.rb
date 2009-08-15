@@ -140,24 +140,29 @@ class PlaceDialogue
     @panel.attach @quitbutton, 0, 2, 5, 6
   end
 
-  def do_the_rest
-    more_options  = Gtk::Button.new("More\nOptions")
+  def next_ride_button
     button1 = Gtk::Button.new("16W")
     button2 = Gtk::Button.new("151S")
     button3 = Gtk::Button.new("16E")
     button4 = Gtk::Button.new("151N")
     button5 = Gtk::Button.new("2E")
     
+    @buttons ||= [ button1, button2, button3, button4, button5 ]
+  end
+
+  def do_the_rest
+    more_options  = Gtk::Button.new("More\nOptions")
+    
     @panel.attach @title,         0, 1, 0, 1
     @panel.attach @clock,         1, 2, 0, 1
     create_origin_button
     create_destination_button
-    @panel.attach button1,       1, 2, 1, 2
-    @panel.attach button2,       1, 2, 2, 3
-    @panel.attach button3,       0, 1, 3, 4
-    @panel.attach button4,       1, 2, 3, 4
+    @panel.attach next_ride_button[0],       1, 2, 1, 2
+    @panel.attach next_ride_button[1],       1, 2, 2, 3
+    @panel.attach next_ride_button[2],       0, 1, 3, 4
+    @panel.attach next_ride_button[3],       1, 2, 3, 4
     @panel.attach more_options,  0, 1, 4, 5
-    @panel.attach button5,       1, 2, 4, 5
+    @panel.attach next_ride_button[4],       1, 2, 4, 5
     
     @window.append(@panel)
     make_quit_button
