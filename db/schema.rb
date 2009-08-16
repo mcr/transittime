@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090815224957) do
+ActiveRecord::Schema.define(:version => 20090816004448) do
 
   create_table "boarding_times", :force => true do |t|
     t.integer  "transit_stop_id"
@@ -85,6 +85,14 @@ ActiveRecord::Schema.define(:version => 20090815224957) do
     t.integer  "booking_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "trip", :force => true do |t|
+    t.date    "trip_start"
+    t.date    "trip_end"
+    t.integer "starting_place_id"
+    t.integer "ending_place_id"
+    t.string  "trip_name"
   end
 
 end
