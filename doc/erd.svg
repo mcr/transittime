@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created by diasvg.py -->
+<svg width="46.661cm" height="38.655cm" viewBox="-13.383 1.195 33.277 39.850"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect x="-13.333" y="12.039" width="7.850" height="1.400" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="-13.333" y="12.039" width="7.850" height="1.400" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="-9.408" y="13.039"  fill="#000000" text-anchor="middle" font-size="1.00" font-family="sans" font-style="normal" font-weight="700">
+boarding_time</text>
+<rect x="-13.333" y="13.439" width="7.850" height="1.800" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="-13.333" y="13.439" width="7.850" height="1.800" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="-13.183" y="14.339"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++vehicle_code: string</text>
+<text x="-13.183" y="15.139"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++boardingtime: date</text>
+<rect x="-13.333" y="15.239" width="7.850" height="0.400" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="-13.333" y="15.239" width="7.850" height="0.400" fill="none" stroke="#000000" stroke-width="0.100" />
+<rect x="25.150" y="36.200" width="7.150" height="1.400" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="25.150" y="36.200" width="7.150" height="1.400" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="28.725" y="37.200"  fill="#000000" text-anchor="middle" font-size="1.00" font-family="sans" font-style="normal" font-weight="700">
+booking</text>
+<rect x="25.150" y="37.600" width="7.150" height="1.800" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="25.150" y="37.600" width="7.150" height="1.800" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="25.300" y="38.500"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++starting_day: date</text>
+<text x="25.300" y="39.300"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++ending_day: date</text>
+<rect x="25.150" y="39.400" width="7.150" height="0.400" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="25.150" y="39.400" width="7.150" height="0.400" fill="none" stroke="#000000" stroke-width="0.100" />
+<rect x="1.800" y="8.950" width="6.800" height="1.400" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="1.800" y="8.950" width="6.800" height="1.400" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="5.200" y="9.950"  fill="#000000" text-anchor="middle" font-size="1.00" font-family="sans" font-style="normal" font-weight="700">
+place</text>
+<rect x="1.800" y="10.350" width="6.800" height="3.400" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="1.800" y="10.350" width="6.800" height="3.400" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="1.950" y="11.250"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++name: string</text>
+<text x="1.950" y="12.050"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++latitude: string</text>
+<text x="1.950" y="12.850"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++longitude: string</text>
+<text x="1.950" y="13.650"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++googlemapurl: uri</text>
+<rect x="1.800" y="13.750" width="6.800" height="0.400" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="1.800" y="13.750" width="6.800" height="0.400" fill="none" stroke="#000000" stroke-width="0.100" />
+<rect x="27.377" y="18.373" width="5.850" height="1.400" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="27.377" y="18.373" width="5.850" height="1.400" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="30.302" y="19.373"  fill="#000000" text-anchor="middle" font-size="1.00" font-family="sans" font-style="normal" font-weight="700">
+route_transit</text>
+<rect x="27.377" y="19.773" width="5.850" height="1.000" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="27.377" y="19.773" width="5.850" height="1.000" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="27.527" y="20.673"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++</text>
+<rect x="27.377" y="20.773" width="5.850" height="0.400" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="27.377" y="20.773" width="5.850" height="0.400" fill="none" stroke="#000000" stroke-width="0.100" />
+<rect x="20.900" y="9.300" width="9.250" height="1.400" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="20.900" y="9.300" width="9.250" height="1.400" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="25.525" y="10.300"  fill="#000000" text-anchor="middle" font-size="1.00" font-family="sans" font-style="normal" font-weight="700">
+routes</text>
+<rect x="20.900" y="10.700" width="9.250" height="1.800" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="20.900" y="10.700" width="9.250" height="1.800" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="21.050" y="11.600"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++name: string</text>
+<text x="21.050" y="12.400"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++max_transit_cnt: integer</text>
+<rect x="20.900" y="12.500" width="9.250" height="0.400" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="20.900" y="12.500" width="9.250" height="0.400" fill="none" stroke="#000000" stroke-width="0.100" />
+<rect x="2.200" y="35.400" width="7.850" height="1.400" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="2.200" y="35.400" width="7.850" height="1.400" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="6.125" y="36.400"  fill="#000000" text-anchor="middle" font-size="1.00" font-family="sans" font-style="normal" font-weight="700">
+schedules</text>
+<rect x="2.200" y="36.800" width="7.850" height="1.800" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="2.200" y="36.800" width="7.850" height="1.800" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="2.350" y="37.700"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++departure_time: time</text>
+<text x="2.350" y="38.500"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++validdays: string</text>
+<rect x="2.200" y="38.600" width="7.850" height="0.400" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="2.200" y="38.600" width="7.850" height="0.400" fill="none" stroke="#000000" stroke-width="0.100" />
+<rect x="-4.100" y="27.100" width="6.100" height="1.400" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="-4.100" y="27.100" width="6.100" height="1.400" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="-1.050" y="28.100"  fill="#000000" text-anchor="middle" font-size="1.00" font-family="sans" font-style="normal" font-weight="700">
+transit_stops</text>
+<rect x="-4.100" y="28.500" width="6.100" height="1.800" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="-4.100" y="28.500" width="6.100" height="1.800" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="-3.950" y="29.400"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++name: string</text>
+<text x="-3.950" y="30.200"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++sign_no: string</text>
+<rect x="-4.100" y="30.300" width="6.100" height="0.400" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="-4.100" y="30.300" width="6.100" height="0.400" fill="none" stroke="#000000" stroke-width="0.100" />
+<rect x="15.250" y="22.500" width="6.800" height="1.400" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="15.250" y="22.500" width="6.800" height="1.400" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="18.650" y="23.500"  fill="#000000" text-anchor="middle" font-size="1.00" font-family="sans" font-style="normal" font-weight="700">
+transits</text>
+<rect x="15.250" y="23.900" width="6.800" height="2.600" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="15.250" y="23.900" width="6.800" height="2.600" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="15.400" y="24.800"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++name: string</text>
+<text x="15.400" y="25.600"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++type</text>
+<text x="15.400" y="26.400"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++route_num: string</text>
+<rect x="15.250" y="26.500" width="6.800" height="0.400" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="15.250" y="26.500" width="6.800" height="0.400" fill="none" stroke="#000000" stroke-width="0.100" />
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="20.900,10.000 20.900,9.650 8.824,9.650 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="9.512,9.250 8.712,9.650 9.512,10.050 "/>
+<text x="21.100" y="9.742"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+n</text>
+<text x="9.600" y="9.510"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++starting_place</text>
+<text x="9.600" y="10.310"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+1</text>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="20.900,12.000 14.750,12.000 14.750,13.250 8.824,13.250 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="9.512,12.850 8.712,13.250 9.512,13.650 "/>
+<text x="20.700" y="11.860"  fill="#000000" text-anchor="end" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+n</text>
+<text x="9.600" y="13.110"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++ending_place</text>
+<text x="9.600" y="13.910"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+1</text>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="18.650,26.900 18.650,30.000 28.725,30.000 28.725,35.926 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="28.325,35.238 28.725,36.038 29.125,35.238 "/>
+<text x="18.850" y="27.442"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+n</text>
+<text x="29.275" y="35.892"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+1</text>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="15.250,23.200 5.200,23.200 5.200,14.374 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="5.600,15.062 5.200,14.262 4.800,15.062 "/>
+<text x="10.225" y="23.060"  fill="#000000" text-anchor="middle" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+starting_place</text>
+<text x="15.050" y="23.060"  fill="#000000" text-anchor="end" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+n</text>
+<text x="5.750" y="14.692"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+1</text>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="15.250,25.200 5.200,25.200 5.200,14.374 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="5.600,15.062 5.200,14.262 4.800,15.062 "/>
+<text x="10.225" y="25.060"  fill="#000000" text-anchor="middle" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+ending_place</text>
+<text x="15.050" y="25.060"  fill="#000000" text-anchor="end" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+n</text>
+<text x="5.750" y="14.692"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+1</text>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="-1.050,27.100 -1.050,20.625 1.800,20.625 1.800,14.150 "/>
+<text x="0.375" y="20.485"  fill="#000000" text-anchor="middle" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+place</text>
+<text x="-0.850" y="26.842"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+n</text>
+<text x="2.000" y="14.692"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+1</text>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="-9.408,15.639 -9.408,29.000 -4.324,29.000 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="-5.012,29.400 -4.212,29.000 -5.012,28.600 "/>
+<text x="-6.754" y="28.860"  fill="#000000" text-anchor="middle" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+stop</text>
+<text x="-9.208" y="16.181"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+1</text>
+<text x="-5.100" y="28.860"  fill="#000000" text-anchor="end" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+n</text>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="30.302,18.373 30.302,15.636 25.525,15.636 25.525,13.124 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="25.925,13.812 25.525,13.012 25.125,13.812 "/>
+<text x="27.914" y="15.496"  fill="#000000" text-anchor="middle" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+route</text>
+<text x="30.502" y="18.115"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+n</text>
+<text x="26.075" y="13.442"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+1</text>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="30.302,21.173 29.905,21.173 29.905,25.200 22.274,25.200 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="22.962,24.800 22.162,25.200 22.962,25.600 "/>
+<text x="30.102" y="21.033"  fill="#000000" text-anchor="end" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+n</text>
+<text x="23.050" y="25.060"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+1</text>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="6.125,35.400 6.150,35.400 6.150,26.000 15.026,26.000 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="14.338,26.400 15.138,26.000 14.338,25.600 "/>
+<text x="6.325" y="35.260"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+n</text>
+<text x="14.250" y="25.860"  fill="#000000" text-anchor="end" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+1</text>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="2.200,36.100 -1.050,36.100 -1.050,30.924 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="-0.650,31.612 -1.050,30.812 -1.450,31.612 "/>
+<text x="2.000" y="35.960"  fill="#000000" text-anchor="end" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+1</text>
+<text x="-0.500" y="31.242"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+n</text>
+<rect x="-7.964" y="1.245" width="6.450" height="1.400" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="-7.964" y="1.245" width="6.450" height="1.400" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="-4.739" y="2.245"  fill="#000000" text-anchor="middle" font-size="1.00" font-family="sans" font-style="normal" font-weight="700">
+Trip</text>
+<rect x="-7.964" y="2.645" width="6.450" height="1.800" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="-7.964" y="2.645" width="6.450" height="1.800" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="-7.814" y="3.545"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++start_time: date</text>
+<text x="-7.814" y="4.345"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
++end_time: date</text>
+<rect x="-7.964" y="4.445" width="6.450" height="0.400" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="-7.964" y="4.445" width="6.450" height="0.400" fill="none" stroke="#000000" stroke-width="0.100" />
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="-9.408,12.039 -9.408,8.442 -4.739,8.442 -4.739,5.068 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="-4.339,5.756 -4.739,4.956 -5.139,5.756 "/>
+<text x="-9.208" y="11.781"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+n</text>
+<text x="-4.189" y="5.387"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+1</text>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="5.200,8.726 5.200,1.945 -1.514,1.945 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="4.800,8.038 5.200,8.838 5.600,8.038 "/>
+<text x="1.843" y="1.805"  fill="#000000" text-anchor="middle" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+starting_place</text>
+<text x="5.750" y="8.692"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+1</text>
+<text x="-1.314" y="1.805"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+n</text>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="-1.514,3.945 5.200,3.945 5.200,8.726 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="4.800,8.038 5.200,8.838 5.600,8.038 "/>
+<text x="1.843" y="3.805"  fill="#000000" text-anchor="middle" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+ending_place</text>
+<text x="-1.314" y="3.805"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+n</text>
+<text x="5.750" y="8.692"  fill="#000000" text-anchor="start" font-size="0.80" font-family="monospace" font-style="normal" font-weight="400">
+1</text>
+</svg>
