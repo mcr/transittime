@@ -1,6 +1,6 @@
 class CreateNewTripTable < ActiveRecord::Migration
   def self.up
-    create_table :trip do |t|
+    create_table :trips do |t|
       t.date    :trip_start
       t.date    :trip_end
       t.integer :starting_place_id
@@ -10,6 +10,6 @@ class CreateNewTripTable < ActiveRecord::Migration
   end
 
   def self.down
-    drop_table :trip
+    drop_table :trips
   end
 end
