@@ -9,12 +9,12 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090817025558) do
+ActiveRecord::Schema.define(:version => 20090817033926) do
 
   create_table "boarding_times", :force => true do |t|
     t.integer  "transit_stop_id"
-    t.string   "vehiclecode"
-    t.datetime "boardtime"
+    t.string   "vehicle_code"
+    t.datetime "boarding_time"
     t.integer  "transit_route_id"
     t.datetime "created_at"
     t.datetime "updated_at"

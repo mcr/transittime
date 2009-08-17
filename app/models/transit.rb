@@ -9,8 +9,8 @@ class Transit < ActiveRecord::Base
 
   def board_at(code, n = Time.now)
     boarding = BoardingTime.new(:transit_stage => self,
-				:boardtime     => n,
-				:vehiclecode   => code)
+				:boarding_time     => n,
+				:vehicle_code   => code)
     boarding.transit_stop = self.starting_place.transit_stops.first
     boarding
   end

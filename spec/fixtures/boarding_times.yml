@@ -2,7 +2,7 @@
 
 pub1:
   transit_stop_id: number16kirkwood
-  vehiclecode: "4016"
-  boardtime: 2009-07-24 16:10
+  vehicle_code: "4016"
+  boarding_time: 2009-07-24 16:10
   transit_route: bus16downtown
 
