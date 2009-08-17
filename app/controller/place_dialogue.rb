@@ -148,6 +148,26 @@ class PlaceDialogue
     @buttons ||= build_next_ride_button
   end
 
+  def trip
+    @trip ||= Trip.starting_from(@current_place)
+  end
+
+  def select_direction(transit)
+    @onwayto = transit
+    n = Time.now
+    trip.boarding_times << transit.board_at("", n)
+    trip.save
+    puts "Added boarding time to trip #{trip.id} of #{n}\n"
+  end
+
+  def generate_button_for(transit)
+    button = Gtk::Button.new(transit.name)
+    button.signal_connect('pressed') do
+      select_direction(transit)
+    end
+    button
+  end
+
   def build_next_ride_button
     transits = @current_place.starting_transits
 
@@ -155,11 +175,10 @@ class PlaceDialogue
     buttons = []
     transits.each { |transit|
       unless @allbuttons[transit.id]
-	@allbuttons[transit.id] = Gtk::Button.new(transit.name)
+	@allbuttons[transit.id] = generate_button_for(transit)
       end
       buttons << @allbuttons[transit.id]
     }
-    debugger
     buttons
   end
 
@@ -169,7 +188,6 @@ class PlaceDialogue
     @panel.attach next_ride_button[2],       0, 1, 3, 4
     @panel.attach next_ride_button[3],       1, 2, 3, 4
     @panel.attach next_ride_button[4],       1, 2, 4, 5
-    debugger
     @panel.show_all
   end
 
