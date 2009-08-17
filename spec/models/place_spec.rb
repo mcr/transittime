@@ -14,8 +14,16 @@ describe Place, "with fixtures loaded" do
   it "should suggest walking to bus 16" do
     home  = places(:home)
     walkto16 = transits(:walktokirkwood)
-    debugger
 
     assert home.starting_transits.include?(walkto16), "walk to #16 bus should be suggested"
   end
+
+  it "should find a transit to destination" do
+    home = places(:home)
+    dest = places(:parliamentpub)
+
+    routes = home.starting_routes
+    assert routes.find_by_ending_place_id(dest.id), "should find a route to parliament pub"
+  end
+
 end
