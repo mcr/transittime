@@ -62,12 +62,12 @@ iterations:
     end: "2009-09-01"
     name: summer2009
     start: "2009-07-26"
-    velocity: 0.0
+    velocity: 0.909090909090909
 summer2009: 
-  :selected: 3
+  :selected: 1
   :list: 
   - !ruby/object:Story 
-    completed: false
+    completed: true
     description: |
       a bus_route has many stops :through schedule.
       
@@ -79,7 +79,7 @@ summer2009:
     estimate: 10.0
     title: establish data model
   - !ruby/object:Story 
-    completed: false
+    completed: true
     description: |
       based upon the data in the data model, specifically, the list of places, and bus routes,
       generate the initial screen as from the prototype.
