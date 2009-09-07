@@ -52,7 +52,7 @@ require "config/boot"
 require "config/environment"
 
 begin
-  require 'app/controller/place_dialogue'
+  require 'app/controllers/place_dialogue'
 
   pd = PlaceDialogue.new
 
