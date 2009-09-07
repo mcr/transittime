@@ -9,7 +9,7 @@ describe Transit, "with fixtures loaded" do
 
     boarding = tr.board_at("8088", Time.now)
 
-    assert_not_nil boarding.boardtime
-    assert_not_nil boarding.vehiclecode
+    assert_not_nil boarding.boarding_time
+    assert_not_nil boarding.vehicle_code
   end
 end
