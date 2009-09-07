@@ -2,6 +2,10 @@
 # from the project root directory.
 ENV["RAILS_ENV"] = "test"
 require File.expand_path(File.dirname(__FILE__) + "/../config/environment")
+require 'ruby-debug'
+$LOAD_PATH << RAILS_ROOT
+require 'app/controller/place_dialogue'
+#require 'lib'
 require 'spec'
 require 'spec/rails'
 
