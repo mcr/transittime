@@ -196,11 +196,11 @@ class PlaceDialogue
   end
 
   def update_next_transit_buttons
-    @panel.attach next_ride_button[0],       1, 2, 1, 2
-    @panel.attach next_ride_button[1],       1, 2, 2, 3
-    @panel.attach next_ride_button[2],       0, 1, 3, 4
-    @panel.attach next_ride_button[3],       1, 2, 3, 4
-    @panel.attach next_ride_button[4],       1, 2, 4, 5
+    @panel.attach(next_ride_button[0],       1, 2, 1, 2) if next_ride_button[0]
+    @panel.attach(next_ride_button[1],       1, 2, 2, 3) if next_ride_button[1]
+    @panel.attach(next_ride_button[2],       0, 1, 3, 4) if next_ride_button[2]
+    @panel.attach(next_ride_button[3],       1, 2, 3, 4) if next_ride_button[3]
+    @panel.attach(next_ride_button[4],       1, 2, 4, 5) if next_ride_button[4]
     @panel.show_all
   end
 
