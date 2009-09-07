@@ -13,6 +13,8 @@
 # You should have received a copy of the GNU General Public License
 # along with Nibbles.  If not, see <http://www.gnu.org/licenses/>.
 
+require 'lib/device'
+
 class Gtk::Widget
   def toggle_visibility
     if visible?

@@ -1,4 +1,5 @@
 require 'rubygems'
+require 'lib/window'
 require 'net/http'
 require 'time'
 require 'rubygems' unless Device.hildon?
@@ -6,6 +7,7 @@ require 'libosso' if Device.hildon?
 require 'sqlite3'
 
 class PlaceDialogue
+  attr_accessor :current_place, :destination_place
 
   def initialize
     if Device.hildon?

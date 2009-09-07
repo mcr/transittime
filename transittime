@@ -23,6 +23,7 @@ TT_ICONS = "#{TT_ROOT}/icons"
 
 require "rubygems"
 require "ruby-debug"
+require 'lib/device'
 
 
 #if not File.exists?(USER_ROOT) or not File.exists?(USER_ROOT+'/tt.sqlite3')
