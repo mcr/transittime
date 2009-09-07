@@ -7,7 +7,8 @@ require 'libosso' if Device.hildon?
 require 'sqlite3'
 
 class PlaceDialogue
-  attr_accessor :current_place, :destination_place
+  # these exist for debugging, move them to a subclass seam
+  attr_accessor :current_place, :destination_place, :onwayto, :onboard
 
   def initialize
     if Device.hildon?
@@ -38,7 +39,6 @@ class PlaceDialogue
   end
 
   def create_origin_button
-
     @places          = Place.find(:all)
     @current_place ||= @places.first
     @current_place ||= Place.new(:name => "Unknown")
@@ -52,7 +52,6 @@ class PlaceDialogue
   end
 
   def create_destination_button
-
     @places          = Place.find(:all)
     @destination_place ||= @places.first
     @destination_place ||= Place.new(:name => "Unknown")
@@ -120,6 +119,9 @@ class PlaceDialogue
     update_origin_button
     @buttons = nil
     update_next_transit_buttons
+
+    # update only the first time.
+    trip.starting_place ||= @current_place
   end
 
   def make_destination_select
@@ -136,6 +138,7 @@ class PlaceDialogue
     update_destination_button
     @buttons = nil
     update_next_transit_buttons
+    trip.ending_place = @destination_place
   end
 
   def make_quit_button
@@ -155,7 +158,8 @@ class PlaceDialogue
   end
 
   def select_direction(transit)
-    @onwayto = transit
+    @onboard = transit
+    @onwayto = transit.ending_place
     n = Time.now
     trip.boarding_times << transit.board_at("", n)
     trip.save
@@ -182,6 +186,13 @@ class PlaceDialogue
       buttons << @allbuttons[transit.id]
     }
     buttons
+  end
+
+  def wait_for_arrival
+    debugger
+
+    [0..4].each { |a| @panel.detach next_ride_button[a] }
+    @arrival = Gtk::Button.new("Arrived at\n"+@onwayto.ending_place.name)
   end
 
   def update_next_transit_buttons

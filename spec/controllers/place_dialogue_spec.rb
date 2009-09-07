@@ -11,14 +11,20 @@ describe PlaceDialogue, "with fixtures loaded" do
     assert pd.next_ride_button.size == 3
   end
 
-  it "should record a new place when button is pushed" do
+  it "should record a new boarding time when button is pushed" do
     pd = PlaceDialogue.new
     pd.current_place = places(:home)
     pd.destination_place = places(:parliamentpub)
 
-    pd.select_direction(transits(:walktokirkwood))
-    
     assert pd.trip, "Trip should be non-nil"
-  end
+    tripcount = pd.trip.boarding_times.count
 
+    pd.select_direction(transits(:walktokirkwood))
+
+    tripcount2 = pd.trip.boarding_times.count
+    assert tripcount2-tripcount == 1, "Should have added one boarding time"
+
+    assert pd.onboard  == transits(:walktokirkwood)
+    assert pd.onwayto == places(:number16downtown)
+  end
 end
